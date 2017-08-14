@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<title>What is my purpose?</title>
+</head>
+<body>
+<!-- background image? -->
+
+<div class="container">
+	<div class="jumbotron">
+		<img src="./assets/images/butterrobot.jpg" alt="butter robot" class="image-responsive" height="200" width="200">
+		<h1> You Serve Butter. </h1>
+	
+		<p> Figure out the proper number of lines of code to make the Butter Robot fulfill his destiny: <strong> to serve butter </strong> </p>
+		<br>
+		<p> Ask the Rick and Morty charachters for help in programming the Butter Robot. The amount of help will be as change from game to game.  Try and get the exact number of lines of code to win. </p>
+	</div>
+</div>
+<div class="container bg">
+	<div class="row">
+		<div class="col-xs-6"> 
+			<h2> Lines of code needed make the robot work: <span id="goalScore"> </span></h2>
+			<hr>
+			<h2> Lines of code installed in the Butter Robot: <span id="gameScore"> </span></h2>
+			<hr>
+			<h3> Click your 'friends' for help. You can't really call them friends however, as Rick is unable to make bonds with other beings: </h3>
+			<br>
+			<div class="row">
+				
+				<div class="row">
+
+					<div class="col-xs-3">
+						<img src="./assets/images/squanchy.png" alt="Squanchy" id="squanchy" class="image-responsive thumbnail charachters">
+						<h4> Squanchy </h4>
+					</div>
+		
+					<div class="col-xs-3">
+						<img src="./assets/images/jellybeanking.png" alt="JellyBeanKing" id="jellyBeanKing" class="image-responsive thumbnail charachters">
+						<h4> King Jelly Bean </h4>
+					</div>
+
+					<div class="col-xs-3">
+						<img src="./assets/images/meseeks.jpg" alt="Mister Meseeks" id="meseeks" class="image-responsive thumbnail charachters">
+						<h4> Mister Meseeks </h4>
+					</div>
+
+					<div class="col-xs-3">
+						<img src="./assets/images/snowball.jpg" alt="Snowball" id="snowball" class="image-responsive thumbnail charachters">
+						<h4> Snowball </h4>
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<div class="col-xs-2"></div>
+
+		<div class="col-xs-4"> 
+			<h2> Score Board: </h2>
+			<hr>
+			<h3> Wins: <span id="wins"></span></h3>
+			<h3> Losses: <span id="losses"></span></h3>
+			<hr>
+			<h4><span id="message"></span></h4>
+		</div>
+	</div>
+
+
+
+</div>
+
+<script type="text/javascript" src="./assets/js/butter.js"></script>
+</body>
+</html>
