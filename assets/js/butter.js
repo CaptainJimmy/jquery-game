@@ -3,8 +3,8 @@ $(document).ready(function(){
 var goalScore = 0;
 var gameScore = 0;
 var wins = 0;
-var losses = 0;
-var modifier = [5,7,9,14];
+var losses = 0;7
+var modifier = [2,5,9,14];
 var charachter = {
 	squanchy: {
 		value: 0,
@@ -23,7 +23,7 @@ var charachter = {
 		message: "Where are my testicles Summer?",
 		} ,
 }
-//var valueModifier = Math.floor(Math.random() * modifier);
+
 
 
 
@@ -33,25 +33,22 @@ function displayScores(){
 	$("#gameScore").html(gameScore);
 	$("#wins").html(wins);
 	$("#losses").html(losses);
-
-	// document.querySelector("#goalScore").innerHTML = goalScore;
-	// document.querySelector("#gameScore").innerHTML = gameScore;
-	// document.querySelector("#wins").innerHTML = wins;
-	// document.querySelector("#losses").innerHTML = losses;
 };
 
 
 // assign the values to the charachters and randomize the goalScore
+
 function startGame(){
 	goalScore = Math.floor(Math.random()*50);
 	gameScore = 0;
-	charachter.squanchy.value = Math.floor(Math.random() * modifier[0]);
-	charachter.jellyBeanKing.value = Math.floor(Math.random() * modifier[1]);
-	charachter.meseeks.value = Math.floor(Math.random() * modifier[2]);
-	charachter.snowball.value = Math.floor(Math.random() * modifier[3]);
-	console.log (charachter.squanchy.value + charachter.jellyBeanKing.value + charachter.meseeks.value + charachter.snowball.value )
+	charachter.squanchy.value = Math.floor(Math.random() + modifier[0]);
+	charachter.jellyBeanKing.value = Math.floor(Math.random() + modifier[1]);
+	charachter.meseeks.value = Math.floor(Math.random() + modifier[2]);
+	charachter.snowball.value = Math.floor(Math.random() + modifier[3]);
+	
 };
 
+// check to see if the game is over
 function checkGameOver(){
 	if (gameScore === goalScore){
 		wins++;
@@ -69,12 +66,13 @@ function checkGameOver(){
 
 	}
 };
-// on click events for the charachter
 
-// squanchy on click
+// startup sequence for the first time
 
 startGame();
 displayScores();
+
+// on click events for the charachters
 
 $(".charachters").on("click", function(){
 	var id = this.id;
@@ -106,27 +104,6 @@ $(".charachters").on("click", function(){
 		alert("ERROR");
 		console.log(id + this.id)
 	}
-	// increment the gameScore
-	// displayScores();
-	// gameOver();
+	
 });
-
-// $("#jellyBeanKing").on("click", function(){
-// 	// increment the gameScore
-// 	// displayScores();
-// 	// gameOver();
-// });
-
-// $("#meseeks").on("click", function(){
-// 	// increment the gameScore
-// 	// displayScores();
-// 	// gameOver();
-// });
-
-// $("#snowball").on("click", function(){
-// 	// increment the gameScore
-// 	// displayScores();
-// 	// gameOver();
-// });
-// // 
 });
