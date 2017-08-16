@@ -53,19 +53,24 @@ function checkGameOver(){
 	if (gameScore === goalScore){
 		wins++;
 		displayScores();
-		alert("You Win. Click OK to Play Again");
+		$("#winModal").modal();
+		//alert("You Win. Click OK to Play Again");
 		startGame();
 		displayScores();
 	}
 	else if (gameScore > goalScore) {
 		losses++;
 		displayScores();
-		alert("Oh Fsck Son, You Done Lost");
+		$("#loseModal").modal();
+		//alert("Oh Fsck Son, You Done Lost");
 		startGame();
 		displayScores();
 
 	}
 };
+//function winModal(){
+//	$("#winModal").modal(show)
+//}
 
 // startup sequence for the first time
 

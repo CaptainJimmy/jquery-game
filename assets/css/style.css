@@ -32,3 +32,9 @@ body, html {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+.testing {
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}

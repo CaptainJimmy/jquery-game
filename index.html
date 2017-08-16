@@ -60,7 +60,7 @@
 
 		<div class="col-xs-2"></div>
 
-		<div class="col-xs-4"> 
+		<div class="col-xs"> 
 			<h2> Score Board: </h2>
 			<hr>
 			<h3> Wins: <span id="wins"></span></h3>
@@ -71,8 +71,53 @@
 	</div>
 
 
+<div id="winModal" class="modal" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header"><button class="close" type="button" data-dismiss="modal"></button>
+			</div>
+
+			<div class="modal-body">
+			<div class="row">
+				<div class="col-med-12">
+				<h2>YOU WONZOMG</h2>
+				<img src="./assets/images/butterWin.jpg" alt="you won n stuff" class="image-responsive testing">
+				</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="loseModal" class="modal" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header"><button class="close" type="button" data-dismiss="modal"></button>
+			</div>
+
+			<div class="modal-body">
+				<div class="row">
+				<div class="col-med-12">
+				<h2>Oh Fsck Son You Done Lost</h2>
+				<img src="./assets/images/butterWin.jpg" alt="you lost n stuff" class="image-responsive testing">
+				</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 </div>
+
 
 <script type="text/javascript" src="./assets/js/butter.js"></script>
 </body>
